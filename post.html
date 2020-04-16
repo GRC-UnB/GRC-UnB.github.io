@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="assets/img/favicon.ico">
+<title>Painel Unificado: convergindo bases de dados da Administração Pública Federal</title>
+<!-- Bootstrap core CSS -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Fonts -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="assets/css/mediumish.css" rel="stylesheet">
+<!-- Image container para expandir imagem -->	
+<link href="assets/css/container.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Begin Nav
+================================================== -->
+<nav class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="container">
+	<!-- Begin Logo -->
+	<a class="navbar-brand" href="index.html">
+	<img src="assets/img/logoppgasite4.png" alt="logo">
+	</a>
+	<!-- End Logo -->
+	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		<!-- Begin Menu -->
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+			<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="post.html">Posts</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="author.html">Autores</a>
+			</li>
+		</ul>
+		<!-- End Menu -->
+		<!-- Begin Search -->
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="text" placeholder="Search">
+			<span class="search-icon"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path></svg></span>
+		</form>
+		<!-- End Search -->
+	</div>
+</div>
+</nav>
+<!-- End Nav
+================================================== -->
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+	<div class="row">
+
+		<!-- Begin Fixed Left Share -->
+		<div class="col-md-2 col-xs-12">
+			<div class="share">
+				
+			</div>
+		</div>
+		<!-- End Fixed Left Share -->
+
+		<!-- Begin Post -->
+		<div class="col-md-8 col-md-offset-2 col-xs-12">
+			<div class="mainheading">
+
+				<!-- Begin Top Meta -->
+				<div class="row post-top-meta">
+					<div class="col-md-2">
+						<a href="author.html"><img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x" alt="Sal"></a>
+					</div>
+					<div class="col-md-10">
+						<a class="link-dark" href="author.html">Vitor</a><a href="#" class="btn follow">Follow</a>
+						<span class="author-description">Grupo de pesquisa</span>
+						<span class="post-date">atualizado às </span><span class="dot"></span><span class="post-read"></span>
+					</div>
+				</div>
+				<!-- End Top Menta -->
+
+				<h1 class="posttitle">Painel Unificado: convergindo bases de dados da Administração Pública Federal</h1>
+
+			</div>
+
+			<!-- Begin Featured Image -->
+			<img class="featured-image img-fluid" src="assets/img/g" alt="">
+			<!-- End Featured Image -->
+
+			<!-- Begin Post Content -->
+			<div class="article-post">
+
+				
+				<p>
+					explicando que estamos convergindo as bases. desafios?
+					<ul>
+						<li>Os orgãos não possuem um identificador unico</li>
+						<li>as bases possuem números distintos de orgãos</li>
+						<li>Periodicidade distintas</li>
+						<li>Não temos dados para o todo o período analisado</li>
+						<li>Os orgãos mudam de nome, se fundem e são extintos</li>
+					</ul> 
+				</p>
+
+				<p>
+					coisas boas que o painel unificado proporciona?
+					<ul>
+						<li>estudos entre variaveis raramente comparadas</li>
+						<li>permite identificar os principais variaveis envolvidadas na adoção de inovações gerenciais</li>
+						<li>acessibilidade e transparencia</li>
+					</ul>
+				</p>
+
+				<!-- Sistemas -->
+
+				<h2>SIAPE</h2>
+
+
+				<blockquote>
+					Gráfico do nº de orgãos total de cada base com o passar do tempo
+				</blockquote>
+
+				<ul>
+					<li>Sistema integrado de Administração de Pessoal</li>
+					<li>Dados de pessoal</li>
+					<li>Pegar o dicionario de dados e explicar algumas colunas da base original</li>
+					<li>Explicar as novas variaveis que a gnt criou </li>
+				</ul>
+
+				<h3>Tratamentos feitos na base</h3>
+
+				<ul>
+					<li>Onde baixa? <a href="http://www.portaltransparencia.gov.br/download-de-dados/servidores">aqui</a> </li>
+					<li>baixamos por um loop código</li>
+					<li>Foram retiradas as colunsa x,y,z da base, que nao foram utilizadas</li>
+					<li>Utiizar o nome do arquivo pra definir as datas</li>
+					<li>explicar que existem varios arquivos dentro do .zip</li>
+				</ul>
+
+				<h3>Problema 1</h3>
+
+				<p>
+					A base possue servidores duplicados ou triplicados num mesmo periodo. porque existem servidores registrados em mais de um orgãos (nao necessariamente recebendo) ou com cargo comissionado no mesmo orgão.
+
+				<blockquote>
+					Lista todas as possibilidades de duplicação, nº de servidores duplicados
+				</blockquote> 
+				</p>
+				
+				<h3>Problema 2</h3>
+
+				<p>
+					Não estão disponiveis os dados de remuneração de todos os servidores. Comparar o identificador unico do arquivo cadastro.xlsx com o do remuneracao.xlsx. Alguns servidores que estão no cadastro.xlsx nao estarão no remuneracao.xlsx
+				</p>
+
+				<h3>Por fim</h3>
+
+				<p>
+					São gerados 3 paineis
+				<p>
+				<ul>
+					<li>
+						<b>Painel de Quantidade<b>: Qtd de servdiores, ln Qtd de servidores, Força de trabalho, tempo médio do servidor no orgão, desvio padrão do tempo médio no orgão, tempo de serviço na administração publica.
+					</li>
+
+					<li>
+						<b>Painel de Chefia</b>: 1- define quem tem cargo de chefia; 2- dos que cargo de chefia, divide em 2 grupos: CLT E RJU; 3- CLT/Total de cargos de chefia e RJU/total de cargos de chefia
+						<blockquote>
+							Fazer os charts <a href="https://app.diagrams.net/">site</a>
+						</blockquote>
+					</li>
+
+					<li>
+						<b>Painel remuneracao</b>: agregar por orgão e periodo as: remuneraçao bruta, remuneraçao liquida.
+					</li>
+				</ul>
+
+				<div class="imageContainer">
+					<input type="checkbox" id="zoomCheck">
+                            		<label for="zoomCheck">
+						<img src="Charts/CHEFIA.png" width="100%">
+					</label>
+				</div>
+						
+
+
+
+
+
+
+
+				
+
+			</div>
+			
+			
+			<!-- End Post Content -->
+
+			<!-- Begin Tags -->
+			<div class="after-post-tags">
+				<ul class="tags">
+					<li><a href="#">GRC</a></li>
+					<li><a href="#">unb </a></li>
+					<li><a href="#">pesquisa</a></li>
+					<li><a href="#">brasil</a></li>
+				</ul>
+			</div>
+			<!-- End Tags -->
+
+		</div>
+		<!-- End Post -->
+	</div>
+</div>
+<!-- End Article
+================================================== -->
+
+<div class="hideshare"></div>
+
+<!-- Begin Related
+================================================== -->
+<div class="graybg">
+	<div class="container">
+		<div class="row listrecent listrelated">
+
+			
+
+		</div>
+	</div>
+</div>
+<!-- End Related Posts
+================================================== -->
+
+<!-- Begin Footer
+================================================== -->
+<div class="container">
+	<div class="footer">
+		<p class="pull-left">
+			 Copyright &copy; 
+		</p>
+		<p class="pull-right">
+			 
+		</p>
+		<div class="clearfix">
+		</div>
+	</div>
+</div>
+<!-- End Footer
+================================================== -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/js/mediumish.js"></script>
+</body>
+</html>
