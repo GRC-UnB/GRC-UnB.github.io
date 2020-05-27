@@ -202,6 +202,7 @@ span.post-name a,span.post-read-more a:hover {
 	font-family:Righteous;
 }
 .mainheading h1.posttitle {
+    text-align: center;
 	font-weight:700;
 	margin-bottom:1rem;
 }
