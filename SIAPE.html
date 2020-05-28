@@ -129,8 +129,71 @@
 				<br>
 
 				<p>
-					Texto sobre as variavéis
+					As variáveis utilizadas no âmbito deste trabalho foram restringidas. O motivo para tal se deu porque os dados disponibilizados no Portal da Transparência eram muito amplos e a base ser muito ampla. Como dito anteriormente, são disponibilizados dois arquivos no Portal da Transparência: uma base com informações sobre o servidor, chamada de cadastro, e outra com informações sobre a remuneração, de mesmo nome. Ambas as bases compartilham um identificador único, que permite cruzar os dados individuais nas duas bases.
 				</p>
+
+				<p>
+					Foram escolhidas três dimensões de análise: análise geral de todos os servidores, análise por servidores com cargo de chefia e informações remuneratórias. Deve-se levar em conta que há servidores repetidos na base, que foram contados como um único servidor no órgão de exercício do cargo efetivo. Isso se deve ao fato de que o SIAPE lista servidores efetivos com cargo em comissão ou funções comissionadas e participação em conselho com mais de um registro: um para ele como servidor efetivo e outros para o cargo ocupado e participações em conselhos, inclusive sendo listados em órgãos diferentes.
+				</p>
+
+				<br>
+				<H2>Análise geral de todos os servidores</H2>
+				<br>
+
+				<p>
+					No âmbito da primeira análise. Analisou-se, primeiramente, se o servidor está efetivamente em atividade. A partir disso, calculou-se a quantidade de servidores ativos no órgão e o tempo de serviço dos servidores, considerando períodos de afastamento também. Esta informação nos permite criar duas variáveis:
+				</p>
+
+				<ul>
+					<li>
+						<i>qtde_servidores</i>: quantidade de servidores no órgão;
+					</li>
+					<li>
+						<i>med_tempo_serv_orgao</i>: média do tempo de serviço no órgão, em anos; e
+					</li>
+					<li>
+						<i>med_tempo_serv_publico</i>: média do tempo de serviço público como um todo, em anos.
+					</li>
+				</ul>
+
+				<p>
+					Além disso, também calculamos os desvios padrões, para verificar se tem muita diferença no tempo de serviço no órgão, com as variáveis <i>sd_tempo_serv_orgao</i> e <i>sd_tempo_serv_publico</i>.
+				</p>
+
+				<br>
+				<h2>Análise por servidores com cargo de chefia</h2>
+				<br>
+
+				<p>
+					Considerando o grupo da análise anterior, isto é, servidores ativos, esta análise filtra os servidores que ocupem cargos em comissão. Notadamente, dois grupos existem nessas classificações: servidores efetivos, sob o regime jurídico único e celetistas. No primeiro grupo estão servidores efetivos que ocupam cargo em comissão ou função comissionada, enquanto que no outro estão trabalhadores não servidores estatutários, mas exercem alguma função comissionada.
+				</p>
+
+				<p>
+				Separados estes dois grupos, as medidas tomadas dizem respeito ao total de cargos em comissão ocupados (<i>total_cargo_chefia_ocup</i>), a quantidade de cargos ocupado por servidores efetivos (<i> servidores_efetivos</i>) e o percentual destes cargos (<i>perc_efetivos_chefia</i>), e a quantidade de cargos ocupado por celetistas (<i> celetistas</i>) e o percentual destes cargos (<i>perc_celetistas_chefia</i>).
+				</p>
+
+				<img class="featured-image img-fluid" src="CHARTS/CHEFIA.png" alt="" width= 800px height= 600px style="border:3px solid gray" > 
+
+				<br>
+				<h2>Informações remuneratórias</h2>
+				<br>
+
+				<p>
+					As informações remuneratórias utilizam duas bases: a base de remunerações e a base de servidores. Esta base lista apenas uma informação remuneratória. Além disso, não especifica a que dado se refere. Ou seja, se um servidor aparece na base de cadastro duplicado, não se sabe se diz respeito ao dado do servidor efetivo no seu cargo efetivo, no seu cargo comissionado ou participação em conselho (muitas vezes em outros órgãos), porque a base não especifica o órgão. Desta forma, essa análise utiliza os dados filtrados na análise geral de todos os servidores, de modo que as remunerações aqui dizem respeito aos servidores na base de cadastro geral de todos os servidores.
+				</p>
+
+				<p>
+					As informações geradas aqui utilizaram duas informações de remuneração: remuneração bruta e remuneração líquida, que é a remuneração bruta menos os descontos. Foram tomadas quatro medidas:
+				</p>
+
+				<ul>
+					<li><i>med_remunera_bruta</i>: média da remuneração bruta; </li>
+					<li><i>med_remunera_líquida</i>: média da remuneração líquida; </li>
+					<li><i>sd_remunera_bruta</i>: desvio padrão da remuneração bruta; e  </li>
+					<li><i>sd_remunera_líquida</i>: desvio padrão da remuneração líquida</li>
+				</ul>
+
+				<br>
 			<!-- End Post Content -->
 
 			<!-- Begin Tags -->
