@@ -123,14 +123,17 @@ section {
 	background-size:cover;
 	height: 10rem;
     width: 10rem;
-    margin: 2.5rem;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     max-height: 15rem;
 	display:block;
-    align-content: center;
+    align-content: center;*/
 	background-position:38% 22% !important;
 	background-origin:border-box!important;
 	border-radius:320px;
-    border: 2px;
+    border: 1px solid darkslategray;
+    /*border-color: darkslategray;*/
 }
 .listrecent .card {
     /*float: left;*/
@@ -344,14 +347,16 @@ blockquote {
     .listfeaturedtag .thumbnail {
 		width: auto;
         height: auto;
+        display: none;
 	}
     .listrecent .thumbnail {
 		width: auto;
         height: auto;
+        display: none;
 	}
     
 }
-@media (max-width:1024px) {
+/*@media (max-width:1024px) {
 	.post-top-meta .col-md-10 {
 		text-align:center;
 	}
@@ -360,7 +365,7 @@ blockquote {
 	.post-top-meta.authorpage {
 		text-align:center;
 	}
-}
+}*/
 .share,.share a {
 	color:rgba(0,0,0,.44);
 	fill:rgba(0,0,0,.44);
