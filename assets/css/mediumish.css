@@ -44,11 +44,14 @@ section {
         width: 100%;
 	}
 }
-@media (min-width:992px) {
+@media (min-width:1000px) {
 	.navbar-toggleable-md .navbar-nav .nav-link {
 		padding-right:.7rem;
 		padding-left:.7rem;
 	}
+    .card-block{
+        margin-left: -30%;
+    }
 }
 .card-columns .card {
 	margin-bottom:20px;
@@ -62,9 +65,9 @@ section {
     /*float: left;*/
     position: relative;
    /* background-color: azure;*/
-	border:1px solid rgba(0,0,0,.1);
-	border-radius:2px;
-	height:360px;
+	border:1px solid rgba(0,0,0,.3);
+	border-radius:5px;
+	height:280px;
 	padding-left:0;
 	margin-bottom:15px;
     width: 100%;
@@ -77,17 +80,20 @@ section {
 	background-size:cover;
 	height: 10rem;
     width: 10rem;
-    max-height: 10rem;
-    min-width: 10rem;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    max-height: 15rem;
 	display:block;
-    padding: 10%;
-    align-content: center;
+    align-content: center;*/
 	background-position:38% 22% !important;
 	background-origin:border-box!important;
 	border-radius:320px;
+    border: 1px solid darkslategray;
 }
 .listfeaturedtag .card-block {
-	padding-left:0;
+    /*margin-left: -10em;*/
+	padding-left:0em;
     height: 260px;
 }
 .listfeaturedtag h2.card-title,.listrecent h2.card-title {
@@ -121,11 +127,11 @@ section {
 }
 .listrecent .thumbnail {
 	background-size:cover;
-	height: 10rem;
-    width: 10rem;
-    margin-left: 2.5rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+	height: 8rem;
+    width: 8rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     max-height: 15rem;
 	display:block;
     align-content: center;*/
@@ -136,14 +142,16 @@ section {
     /*border-color: darkslategray;*/
 }
 .listrecent .card {
-    /*float: left;*/
+     /*float: left;*/
     position: relative;
-	border:1px solid rgba(0,0,0,.1);
-	border-radius:2px;
-	height:260px;
+   /* background-color: azure;*/
+	border:1px solid rgba(0,0,0,.3);
+	border-radius:5px;
+	height:200px;
 	padding-left:0;
 	margin-bottom:15px;
     width: 100%;
+    max-width: 100%;
 }
 .listrecent .card:hover {
         background-color: #f1f1f1;
