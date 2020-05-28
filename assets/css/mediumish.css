@@ -41,6 +41,7 @@ section {
 		-webkit-column-count:2;
 		-moz-column-count:2;
 		column-count:2;
+        width: 100%;
 	}
 }
 @media (min-width:992px) {
@@ -51,6 +52,7 @@ section {
 }
 .card-columns .card {
 	margin-bottom:20px;
+    width: 100%;
 }
 .listfeaturedtag .wrapthumbnail {
 	height:auto;
@@ -59,19 +61,25 @@ section {
 .listfeaturedtag .card {
     /*float: left;*/
     position: relative;
+   /* background-color: azure;*/
 	border:1px solid rgba(0,0,0,.1);
 	border-radius:2px;
-	height:260px;
+	height:360px;
 	padding-left:0;
 	margin-bottom:15px;
+    width: 200%;
+}
+.listfeaturedtag .card:hover {
+    background-color: #f1f1f1;
 }
 .listfeaturedtag .thumbnail {
 	background-size:cover;
-	height:70%;
+	height:320px;
 	display:block;
+    align-content: center;
 	background-position:38% 22% !important;
 	background-origin:border-box!important;
-	border-top-left-radius:2px;
+	border-radius:320px;
 }
 .listfeaturedtag .card-block {
 	padding-left:0;
@@ -105,6 +113,28 @@ section {
 .listrecent .wrapfooter {
 	font-size:12px;
 	margin-top:30px;
+}
+.listrecent .thumbnail {
+	background-size:cover;
+	height:260px;
+	display:block;
+    align-content: center;
+	background-position:38% 22% !important;
+	background-origin:border-box!important;
+	border-radius:320px;
+}
+.listrecent .card {
+    /*float: left;*/
+    position: relative;
+	border:1px solid rgba(0,0,0,.1);
+	border-radius:2px;
+	height:260px;
+	padding-left:0;
+	margin-bottom:15px;
+    width: 100%;
+}
+.listrecent .card:hover {
+        background-color: #f1f1f1;
 }
 .author-thumb {
 	width:40px;
@@ -286,6 +316,7 @@ blockquote {
 	}
 	.listfeaturedtag .card {
 		height:auto;
+        width: 100%;
 	}
 	.listfeaturedtag .wrapfooter {
 		position:relative;
