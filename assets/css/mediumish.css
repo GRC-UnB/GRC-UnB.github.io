@@ -38,9 +38,9 @@ section {
 }
 @media (min-width:576px) {
 	.card-columns.listfeaturedtag {
-		-webkit-column-count:2;
-		-moz-column-count:2;
-		column-count:2;
+		-webkit-column-count:1;
+		-moz-column-count:1;
+		column-count:1;
         width: 100%;
 	}
 }
@@ -67,15 +67,20 @@ section {
 	height:360px;
 	padding-left:0;
 	margin-bottom:15px;
-    width: 200%;
+    width: 100%;
+    max-width: 100%;
 }
 .listfeaturedtag .card:hover {
     background-color: #f1f1f1;
 }
 .listfeaturedtag .thumbnail {
 	background-size:cover;
-	height:320px;
+	height: 10rem;
+    width: 10rem;
+    max-height: 10rem;
+    min-width: 10rem;
 	display:block;
+    padding: 10%;
     align-content: center;
 	background-position:38% 22% !important;
 	background-origin:border-box!important;
@@ -116,12 +121,16 @@ section {
 }
 .listrecent .thumbnail {
 	background-size:cover;
-	height:260px;
+	height: 10rem;
+    width: 10rem;
+    margin: 2.5rem;
+    max-height: 15rem;
 	display:block;
     align-content: center;
 	background-position:38% 22% !important;
 	background-origin:border-box!important;
 	border-radius:320px;
+    border: 2px;
 }
 .listrecent .card {
     /*float: left;*/
@@ -311,12 +320,19 @@ blockquote {
 		-ms-flex: 100%;
 		flex: 100%;
 	}
-	.listfeaturedtag .wrapthumbnail {
+	/*.listfeaturedtag .wrapthumbnail {
 		height:200px;
-	}
+	}*/
 	.listfeaturedtag .card {
 		height:auto;
         width: 100%;
+        text-align: center;
+	}
+    .listrecent .card {
+		height:auto;
+        width: 100%;
+        text-align: center;
+        align-content: center;
 	}
 	.listfeaturedtag .wrapfooter {
 		position:relative;
@@ -325,6 +341,15 @@ blockquote {
 	.listfeaturedtag .card-block {
 		padding:20px;
 	}
+    .listfeaturedtag .thumbnail {
+		width: auto;
+        height: auto;
+	}
+    .listrecent .thumbnail {
+		width: auto;
+        height: auto;
+	}
+    
 }
 @media (max-width:1024px) {
 	.post-top-meta .col-md-10 {
